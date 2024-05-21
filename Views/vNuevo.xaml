@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="crivasFinal.Views.vNuevo"
+             >
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="+ Nuevo">
+            <MenuFlyoutItem Text="Persona"/>
+            <MenuFlyoutItem Text="Libro de Excel"/>
+            <MenuFlyoutItem Text="Otro"/>
+        </MenuBarItem>
+
+        <MenuBarItem Text="Buscar">
+            <MenuFlyoutItem Text="Por nombre"/>
+            <MenuFlyoutItem Text="Por número"/>
+        </MenuBarItem>
+        
+        <MenuBarItem Text="Subir">
+            <MenuFlyoutItem Text="Carpeta"/>
+            <MenuFlyoutItem Text="Word,Pdf,etc"/>
+        </MenuBarItem>
+        
+        <MenuBarItem Text="Eliminar">
+            <MenuFlyoutItem Text="Por nombre"/>
+            <MenuFlyoutItem Text="Por número"/>
+        </MenuBarItem>
+        
+        <MenuBarItem Text="Actualizar">
+            <MenuFlyoutItem Text="Por nombre"/>
+            <MenuFlyoutItem Text="Por número"/>
+        </MenuBarItem>
+
+    </ContentPage.MenuBarItems>
+    
+    <VerticalStackLayout>
+        <Label 
+   Text="buscar"
+   VerticalOptions="Center" 
+   HorizontalOptions="Center" />
+
+        <Entry x:Name="txtbuscar"
+Placeholder="ingrese la cedula a buscar" />
+
+        <Button x:Name="btnBuscar"
+         Text="Buscar"
+         Clicked="btnBuscar_Clicked"/>
+
+        <Label 
+     Text="id"
+     VerticalOptions="Center" 
+     HorizontalOptions="Center" />
+
+        <Entry x:Name="txtid"
+  Placeholder="ingrese su numbre" />
+
+        <Label 
+     Text="Cedula"
+     VerticalOptions="Center" 
+     HorizontalOptions="Center" />
+
+        <Entry x:Name="txtCedula"
+        Placeholder="ingrese su numbre" />
+
+        <Label 
+            Text="Nombre"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="txtNombre"
+         Placeholder="ingrese su numbre" />
+
+        <Label 
+     Text="Apellido"
+     VerticalOptions="Center" 
+     HorizontalOptions="Center" />
+
+        <Entry x:Name="txtApellido"
+  Placeholder="ingrese su numbre" />
+
+
+
+        <Button x:Name="btnGuardar"
+                Text="Guardar"
+                Clicked="btnGuardar_Clicked"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>
